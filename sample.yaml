@@ -4,9 +4,9 @@
     animal: Tiger
 #  vars_files:
 #   - ./var.txt
-  vars_prompt:
-    - name: animal
-      prompt: "Please enter the animal name:"
+#  vars_prompt:
+#   - name: animal
+#      prompt: "Please enter the animal name:"
   tasks:
     - name: print Tiger
       debug:
@@ -19,5 +19,10 @@
     - name: print Tiger
       debug:
         msg: "hello I am {{animal}}"    
-     
+    - name: get hostname
+      shell: hostname
+      register: URL
+    - name: print hostname
+      debug:
+        msg: "{{URL}}" 
      
