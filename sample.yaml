@@ -1,35 +1,11 @@
 - name: my 1st playbook
   hosts: all
-  vars:
-    animal: "tiger"
-  # vars_files:
-  #   - ./var.txt
-  # vars_prompt:
-  #   - name: animal
-  #     prompt: "Please enter the animal name:"
-  #     private: false
   tasks:
-    - name: print animal1
+    - name: print tiger
       debug:
-        msg: "hello I am {{animfagfarg}}"
-      ignore_errors: true
+        msg: "hello I am tiger"
     - name: print animal2
       debug:
-        msg: "hello I am {{animal}}"
-      vars:
-        animal: "lion"
-    - name: print animal3
-      debug:
-        msg: "hello I am {{animal}}"
-    - name: get hostname
-      shell: hostname
-      register: URL
-    - name: print hostname
-      debug:
-        msg: "{{URL.stdout}}"
-
-
-
-
-#global
-#local
+        msg: "hello I am animal"
+     
+     
