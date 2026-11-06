@@ -3,9 +3,9 @@
   vars:
     animal: Tiger
   tasks:
-    - name: print tiger
+    - name: print Tiger
       debug:
-        msg: "hello I am {{tiger}}"
+        msg: "hello I am {{animal}}"
     - name: print Tiger
       debug:
         msg: "hello I am {{animal}}"
