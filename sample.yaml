@@ -9,5 +9,10 @@
     - name: print Tiger
       debug:
         msg: "hello I am {{animal}}"
+      vars:
+        animal: Lion  
+    - name: print Tiger
+      debug:
+        msg: "hello I am {{animal}}"    
      
      
