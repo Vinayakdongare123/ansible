@@ -11,6 +11,7 @@
     - name: print Tiger
       debug:
         msg: "hello I am {{aanimal}}"
+      ignore_errors: true
     - name: print Tiger
       debug:
         msg: "hello I am {{animal}}"
