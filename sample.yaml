@@ -10,7 +10,7 @@
   tasks:
     - name: print Tiger
       debug:
-        msg: "hello I am {{animal}}"
+        msg: "hello I am {{animall}}"
     - name: print Tiger
       debug:
         msg: "hello I am {{animal}}"
