@@ -1,11 +1,13 @@
 - name: my 1st playbook
   hosts: all
+  vars:
+    animal: Tiger
   tasks:
     - name: print tiger
       debug:
-        msg: "hello I am tiger"
-    - name: print animal2
+        msg: "hello I am {{tiger}}"
+    - name: print Tiger
       debug:
-        msg: "hello I am animal"
+        msg: "hello I am {{animal}}"
      
      
