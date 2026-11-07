@@ -1,0 +1,20 @@
+- name: file to do multipal work/install
+  hosts: all
+  become: true
+  tasks:
+    - name: print multipal items
+      debug:
+        msg: "{{item}}"
+      loop:
+       - hello
+       - how are you?
+       - i am good.
+    - name: install packages
+      package:
+        name: "{{item}}"
+      loop: 
+        - vim
+        - wget
+        - nginx
+        - apache2
+
